@@ -1,8 +1,8 @@
 # shanakajayakody.com
 
-Personal site of Shanaka Jayakody — educator, founder, builder.
+Personal site of Shanaka Jayakody: educator, founder, builder.
 
-Built with Vite + React + TypeScript. No CSS framework, no CMS — just editable TSX and CSS.
+Built with Vite + React + TypeScript. No CSS framework, no CMS: just editable TSX and CSS.
 
 ## Develop
 

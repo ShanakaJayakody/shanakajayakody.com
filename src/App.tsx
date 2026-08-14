@@ -9,13 +9,13 @@ const projects = [
     name: "Omthentic AI",
     role: "Founder",
     description:
-      "AI-powered communication coaching — practice medical interviews with instant, structured feedback on content, structure, and delivery.",
+      "AI-powered communication coaching. Practice medical interviews with instant, structured feedback on content, structure, and delivery.",
   },
   {
     name: "Interview Coaching",
     role: "Coach & Program Designer",
     description:
-      "Weekly interactive group classes with a highly structured process — over 1,000 students coached into medicine and health-science programs.",
+      "Weekly interactive group classes with a highly structured process. Over 1,000 students coached into medicine and health-science programs.",
   },
 ];
 
@@ -38,8 +38,8 @@ export default function App() {
           <p className="kicker">Educator · Founder · Builder</p>
           <h1>Shanaka Jayakody</h1>
           <p className="lede">
-            I build values-driven education businesses — refined by technology,
-            measured by the students they help activate.
+            I build values-driven education businesses, refined by technology
+            and measured by the students they help activate.
           </p>
         </section>
 
@@ -47,7 +47,7 @@ export default function App() {
           <h2>About</h2>
           <p>
             My work sits at the intersection of teaching and technology. I have
-            spent the last decade helping students win places in medicine —
+            spent the last decade helping students win places in medicine,
             first as a coach, then by building the platforms I wished existed:
             structured UCAT preparation, interview training that treats
             performance as a learnable skill, and AI tools that give every
