@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shanakajayakody.vercel.app/sitemap.xml
+Sitemap: https://www.shanakajayakody.com/sitemap.xml
