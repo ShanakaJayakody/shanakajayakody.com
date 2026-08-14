@@ -102,6 +102,36 @@ h1 {
   max-width: 34rem;
 }
 
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 0 0 3rem;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+}
+
 .section {
   padding: 3rem 0;
   border-top: 1px solid var(--border);
@@ -141,6 +171,55 @@ h2 {
   font-size: 0.85rem;
   font-weight: 500;
   margin-bottom: 0.6rem;
+}
+
+.project h3 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: var(--accent);
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.pub-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.profile-list a {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.profile-list a:hover {
+  border-color: var(--accent);
 }
 
 a {
