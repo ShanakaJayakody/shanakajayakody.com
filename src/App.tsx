@@ -174,6 +174,33 @@ const press = [
   },
 ];
 
+const faqs = [
+  {
+    q: "Who is Shanaka Jayakody?",
+    a: "Shanaka Jayakody is a Melbourne educator and the founder and CEO of MedWithPurpose. He has worked in medical admissions preparation for more than thirteen years, has coached over 1,000 students into medicine and health-science programs, and is the author of two UCAT preparation books.",
+  },
+  {
+    q: "What does Shanaka teach for the UCAT?",
+    a: "Shanaka coaches the UCAT through MedWithPurpose, whose UCAT Mastery program includes 25,000 practice questions, structured strategy, and live analytics. He has taught the UCAT for more than thirteen years and wrote two UCAT preparation books under the UCAT Secrets imprint.",
+  },
+  {
+    q: "What is Shanaka's role at MedWithPurpose?",
+    a: "Shanaka founded MedWithPurpose and serves as its CEO. The company provides Australian medical admissions preparation: UCAT coaching, interview training for MMI and panel formats, and CASPer preparation with AI marking.",
+  },
+  {
+    q: "What is Shanaka's connection to InterviewMD?",
+    a: "Shanaka is a co-founder of InterviewMD, started in 2025. It prepares medical school applicants for interviews by combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
+  },
+  {
+    q: "How does Shanaka help students get into medicine?",
+    a: "Shanaka helps students win places in medicine and med school across every admissions hurdle: the UCAT through MedWithPurpose, medical school interviews through InterviewMD and Interview Mastery, and the Bond University psychometric assessment through The PrepBond Academy. Over 1,000 of his students have been coached into medicine and health-science programs.",
+  },
+  {
+    q: "How do I contact Shanaka Jayakody?",
+    a: "Email admin@omthentic.ai. Corrections take priority: include the address of the page and the source that contradicts it.",
+  },
+];
+
 const profiles = [
   { name: "LinkedIn", url: "https://www.linkedin.com/in/shanakajayakody/" },
   { name: "GitHub", url: "https://github.com/ShanakaJayakody" },
@@ -403,6 +430,21 @@ export default function App() {
                 </li>
               ))}
             </ul>
+          </section>
+
+          <section className="section" id="faq">
+            <div className="shead">
+              <h2>Common questions</h2>
+              <p className="eyebrow">FAQ</p>
+            </div>
+            <div className="faq-list">
+              {faqs.map((f) => (
+                <details className="faq-item" key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
           </section>
 
           <section className="section" id="contact">

@@ -114,6 +114,16 @@ img{max-width:100%;display:block}
 .pub-list .meta{margin:0;font-size:12.5px}
 .section>p>a,.pub-list+p a{font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim);font-size:13px;text-decoration:none;transition:color .15s}
 .section>p>a:hover,.pub-list+p a:hover{color:var(--sig)}
+#faq{--sec-pad:88px}
+.faq-list{border:1px solid var(--line);background:var(--panel);box-shadow:var(--plate-lip)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:0}
+.faq-item summary{cursor:pointer;font-weight:700;font-size:17px;padding:18px 20px;list-style:none;transition:background .15s,color .15s;position:relative;padding-right:52px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";font-family:var(--mono);color:var(--dim);font-weight:400;font-size:18px;position:absolute;right:20px;top:50%;transform:translateY(-50%)}
+.faq-item[open] summary:after{content:"\2212";color:var(--sig)}
+.faq-item summary:hover{background:var(--panel-2);color:var(--sig)}
+.faq-item p{color:var(--dim);font-size:15px;max-width:75ch;padding:0 20px 18px;margin:0}
 #contact{border-top:1px solid var(--line)}
 .contact-band{isolation:isolate;border:1px solid var(--line);background:var(--panel);box-shadow:var(--plate-lip);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;padding:56px 48px;display:flex;position:relative;overflow:hidden}
 .contact-band:before{content:"";z-index:-1;pointer-events:none;background-image:url(/images/plate-spiral.avif);background-position:74%;background-size:cover;background-color:var(--panel);background-blend-mode:difference;opacity:.62;position:absolute;inset:0;mask-image:linear-gradient(90deg,#0000 10%,#000 64%)}
