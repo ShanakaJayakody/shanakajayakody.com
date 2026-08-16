@@ -1,115 +1,130 @@
-const stats = [
-  { value: "13+", label: "Years coaching UCAT & admissions" },
-  { value: "8,000+", label: "Hours of teaching" },
-  { value: "1,000+", label: "Students coached into medicine" },
-  { value: "2", label: "Published UCAT books" },
+const evidence = [
+  {
+    id: "C-01",
+    name: "Goodreads",
+    url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
+    desc: "Author profile listing both UCAT preparation books under his name, catalogued independently of any site he runs.",
+  },
+  {
+    id: "C-02",
+    name: "MedWithPurpose",
+    url: "https://www.medwithpurpose.com/about",
+    desc: "The company names him as its founder and CEO on its own about page, alongside its head of coaching and head of programmes.",
+  },
 ];
 
 const ventures = [
   {
+    id: "V-01",
     name: "MedWithPurpose",
-    role: "Founder & CEO",
-    url: "https://medwithpurpose.com",
-    description:
-      "Australian medical admissions preparation: UCAT Mastery with 25,000+ practice questions, Interview Mastery for MMI and panel formats, and CASPer preparation with AI marking. Over 1,000 students coached into medicine and health-science programs.",
+    url: "https://www.medwithpurpose.com/",
+    meta: "Founder and CEO",
+    measure:
+      "Over 1,000 students coached into medicine and health-science programs.",
+    detail:
+      "Australian medical admissions preparation: UCAT Mastery with 25,000 practice questions, Interview Mastery for MMI and panel formats, and CASPer preparation with AI marking.",
   },
   {
+    id: "V-02",
     name: "Omthentic",
-    role: "Founder",
-    url: "https://omthentic.ai",
-    description:
+    url: "https://www.omthentic.ai/",
+    meta: "Founder",
+    detail:
       "A venture house building technology for authentic human expression, aimed at helping people communicate as themselves rather than to a script.",
   },
   {
+    id: "V-03",
     name: "InterviewMD",
-    role: "Co-Founder · Since 2025",
-    url: "https://omthentic.ai",
-    description:
+    url: "https://www.interviewmd.org/",
+    meta: "Co-Founder · since 2025",
+    detail:
       "Medical school interview preparation combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
   },
   {
+    id: "V-04",
     name: "The PrepBond Academy",
-    role: "Founder · Since 2025",
-    url: "https://prep-bond.vercel.app",
-    description:
-      "Preparation for the MSCEIT, the psychometric assessment used in Bond University medical admissions. Independent of Bond University and not endorsed by it.",
+    url: "https://www.prepbond.com.au/",
+    meta: "Founder · since 2025",
+    detail:
+      "Preparation for the MSCEIT, the psychometric assessment used in Bond University medical admissions. The academy states it is independent of Bond University and not endorsed by it.",
   },
   {
+    id: "V-05",
     name: "UCAT Secrets",
-    role: "Author & Founder",
     url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
-    description:
-      "The imprint behind my UCAT preparation books, distilling thousands of hours of coaching into structured, learnable strategy.",
+    meta: "Author and Founder",
+    detail:
+      "The imprint behind his two UCAT preparation books, distilling coaching practice into structured strategy.",
   },
   {
+    id: "V-06",
     name: "ShareTree",
-    role: "Character & Culture Lead for Schools",
-    url: "https://sharetree.org",
-    description:
+    url: "https://sharetree.org/",
+    meta: "Character and Culture Lead for Schools",
+    detail:
       "Character and culture education with a Melbourne charity, bringing values development into schools alongside academic preparation.",
-  },
-];
-
-const publications = [
-  {
-    title:
-      "How To Ace The UCAT & Get Into Medicine: Without Sacrificing Your Year 12 Results",
-    meta: "Book · Goodreads 4.5/5",
-    url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
-  },
-  {
-    title: "100 Situational Judgement UCAT Questions: UCAT Secrets",
-    meta: "Book · Goodreads 5.0/5",
-    url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
-  },
-  {
-    title: "Finding Purpose at your Lowest Point",
-    meta: "Bottled Up Podcast, Episode 53 (2022)",
-    url: "https://podcasts.apple.com/nz/podcast/id1524876519?i=1000575427726",
-  },
-  {
-    title: "UCAT Masterclass with KIS Academics",
-    meta: "Video (2021)",
-    url: "https://www.youtube.com/watch?v=_XZzB27Y9Qg",
   },
 ];
 
 const career = [
   {
-    role: "Founder & CEO",
+    role: "Founder and CEO",
     org: "MedWithPurpose",
-    period: "",
-    note: "Founded to make medical admissions preparation accessible to Australian applicants.",
+    note: "Founded to make medical admissions preparation accessible to Australian applicants. The company states it was built on that aim on its own about page, where it also names a head of coaching and a head of programmes.",
   },
   {
     role: "Founder",
     org: "Omthentic",
-    period: "",
-    note: "A venture house for technology supporting authentic human expression.",
+    note: "A venture house for technology supporting authentic human expression, aimed at helping people communicate as themselves rather than to a script.",
   },
   {
     role: "Co-Founder",
     org: "InterviewMD",
     period: "2025 to present",
-    note: "Interview preparation pairing coaching with adaptive software.",
+    note: "Medical school interview preparation combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
   },
   {
     role: "Founder",
     org: "The PrepBond Academy",
     period: "2025 to present",
-    note: "MSCEIT preparation for Bond University medical admissions.",
+    note: "Preparation for the MSCEIT, the psychometric assessment used in Bond University medical admissions. The academy states it is independent of Bond University and not endorsed by it.",
   },
   {
-    role: "Author & Founder",
+    role: "Author and Founder",
     org: "UCAT Secrets",
-    period: "",
-    note: "The imprint under which both UCAT preparation books were published.",
+    note: "The imprint under which both UCAT preparation books were published. Both are catalogued on Goodreads.",
   },
   {
-    role: "Character & Culture Lead for Schools",
+    role: "Character and Culture Lead for Schools",
     org: "ShareTree",
-    period: "",
-    note: "Values development in schools with a Melbourne charity.",
+    note: "Character and culture education with a Melbourne charity, bringing values development into schools alongside academic preparation.",
+  },
+];
+
+const writing = [
+  {
+    title:
+      "How To Ace The UCAT & Get Into Medicine: Without Sacrificing Your Year 12 Results",
+    meta: "UCAT Secrets",
+    url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
+  },
+  {
+    title: "100 Situational Judgement UCAT Questions: UCAT Secrets",
+    meta: "UCAT Secrets",
+    url: "https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody",
+  },
+];
+
+const press = [
+  {
+    title: "Finding Purpose at your Lowest Point",
+    meta: "Bottled Up Podcast · 2022",
+    url: "https://podcasts.apple.com/nz/podcast/53-finding-purpose-at-your-lowest-point-death-and/id1524876519?i=1000575427726",
+  },
+  {
+    title: "UCAT Masterclass with KIS Academics",
+    meta: "KIS Academics · 2021",
+    url: "https://www.youtube.com/watch?v=_XZzB27Y9Qg",
   },
 ];
 
@@ -129,149 +144,251 @@ const profiles = [
 export default function App() {
   return (
     <>
-      <header className="nav">
-        <a className="nav-name" href="#top">
-          SJ
-        </a>
-        <nav aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <header className="site-header">
+        <div className="wrap-wide bar">
+          <a className="brand" href="/">
+            Shanaka Jayakody
+          </a>
+          <nav aria-label="Primary">
+            <ul>
+              <li>
+                <a href="#publications">Publications</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
-      <main id="top">
-        <section className="hero">
-          <p className="kicker">Educator · Founder · Builder · Melbourne, Australia</p>
-          <h1>Shanaka Jayakody</h1>
-          <p className="hero-role">Founder &amp; CEO, MedWithPurpose</p>
-          <p className="lede">
-            I build values-driven education businesses, refined by technology
-            and measured by the students they help activate. Founder of
-            MedWithPurpose, Omthentic and The PrepBond Academy, co-founder of
-            InterviewMD, and author of two UCAT preparation books.
-          </p>
-        </section>
+      <main id="main">
+        <div className="masthead">
+          <div className="wrap-wide">
+            <section className="hero">
+              <figure className="idplate rise d1">
+                <img
+                  className="hero-photo"
+                  src="/images/shanaka-jayakody.webp"
+                  alt="Shanaka Jayakody, founder and CEO of MedWithPurpose"
+                  width={368}
+                  height={368}
+                  fetchPriority="high"
+                />
+                <div className="plate-rows">
+                  <div>
+                    <span className="eyebrow">Melbourne, Australia</span>
+                  </div>
+                  <div>
+                    <span className="on-record">On the record</span>
+                  </div>
+                </div>
+              </figure>
+              <div>
+                <h1 className="rise d2">
+                  Shanaka Jaya<span className="h1-tail">kody</span>
+                </h1>
+                <p className="hero-role rise d3">
+                  Founder &amp; CEO, MedWithPurpose
+                </p>
+                <p className="lede rise d4">
+                  Shanaka Jayakody is a Melbourne educator and the founder of
+                  MedWithPurpose, Omthentic and The PrepBond Academy, and a
+                  co-founder of InterviewMD. He coaches students for the UCAT,
+                  for medical school interviews and for the Bond University
+                  psychometric assessment, has worked in medical admissions
+                  preparation for more than thirteen years, and is the author
+                  of two UCAT preparation books. He is an alumnus of Melbourne
+                  High School.
+                </p>
+                <p className="hero-proof rise d5">
+                  <b>2</b> published books and <b>2</b> recorded appearances.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
 
-        <section className="stats" aria-label="Experience at a glance">
-          {stats.map((s) => (
-            <div key={s.label} className="stat">
-              <span className="stat-value">{s.value}</span>
-              <span className="stat-label">{s.label}</span>
+        <div className="wrap-wide">
+          <section className="section" id="evidence">
+            <div className="shead">
+              <h2>What can be checked</h2>
+              <p className="eyebrow">Credentials and press</p>
             </div>
-          ))}
-        </section>
+            <div className="reg">
+              {evidence.map((e) => (
+                <div className="rrow" key={e.id}>
+                  <span className="rid" aria-hidden="true">
+                    {e.id}
+                  </span>
+                  <span className="rname">
+                    <a href={e.url} rel="noopener" target="_blank">
+                      {e.name}
+                    </a>
+                  </span>
+                  <p className="rdesc">{e.desc}</p>
+                  <span className="chip">On record</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
-        <section id="about" className="section">
-          <h2>About</h2>
-          <p>
-            My work sits at the intersection of teaching and technology. I have
-            spent more than thirteen years, and over 8,000 hours of direct
-            teaching, helping students win places in medicine. I started as a
-            coach, sitting the UCAT myself repeatedly to keep my strategies
-            honest, and went on to build the platforms I wished existed:
-            structured UCAT preparation, interview training that treats
-            performance as a learnable skill, and AI tools that give every
-            student a personal coach.
-          </p>
-          <p>
-            Along the way I wrote two UCAT preparation books, coached more than
-            1,000 students into medicine and health-science programs, and led
-            character and culture education in schools with the charity
-            ShareTree. I am a Melbourne High School alumnus and I work from
-            Melbourne, Australia.
-          </p>
-          <p>
-            I care about the craft of explanation, honest measurement of
-            outcomes, and software that gets out of the way.
-          </p>
-        </section>
+          <section className="section" id="roles">
+            <div className="shead">
+              <h2>Companies and roles</h2>
+              <p className="eyebrow">Ventures</p>
+            </div>
+            <div className="vgrid">
+              {ventures.map((v) => (
+                <div className="vcell" key={v.id}>
+                  <span className="mono" aria-hidden="true">
+                    {v.id}
+                  </span>
+                  <h3>
+                    <a href={v.url} rel="noopener" target="_blank">
+                      {v.name}
+                    </a>
+                  </h3>
+                  <p className="meta">{v.meta}</p>
+                  {v.measure && <p className="role-measure">{v.measure}</p>}
+                  <p className="role-detail">{v.detail}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
-        <section id="work" className="section">
-          <h2>Work</h2>
-          <div className="projects">
-            {ventures.map((p) => (
-              <article key={p.name} className="project">
-                <h3>
-                  <a href={p.url} rel="me">
+          <section className="section" id="background">
+            <div className="shead">
+              <h2>Career and education</h2>
+              <p className="eyebrow">Background</p>
+            </div>
+            <h3>Career</h3>
+            <ul className="timeline">
+              {career.map((c) => (
+                <li key={c.role + c.org}>
+                  {c.period && <p className="meta">{c.period}</p>}
+                  <h4>{c.role}</h4>
+                  <p className="org">{c.org}</p>
+                  <p>{c.note}</p>
+                </li>
+              ))}
+            </ul>
+            <h3>Education</h3>
+            <ul className="timeline">
+              <li>
+                <h4>Alumnus</h4>
+                <p className="org">Melbourne High School</p>
+              </li>
+            </ul>
+          </section>
+
+          <section className="section" id="publications">
+            <div className="shead">
+              <h2>Published work</h2>
+              <p className="eyebrow">Writing</p>
+            </div>
+            <ul className="pub-list">
+              {writing.map((w) => (
+                <li key={w.title}>
+                  <h3>
+                    <a href={w.url} rel="noopener" target="_blank">
+                      {w.title}
+                    </a>
+                  </h3>
+                  <p className="meta">{w.meta}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="section" id="quoted">
+            <div className="shead">
+              <h2>Quoted elsewhere</h2>
+              <p className="eyebrow">Press</p>
+            </div>
+            <ul className="pub-list">
+              {press.map((p) => (
+                <li key={p.title}>
+                  <h3>
+                    <a href={p.url} rel="noopener" target="_blank">
+                      {p.title}
+                    </a>
+                  </h3>
+                  <p className="meta">{p.meta}</p>
+                </li>
+              ))}
+            </ul>
+            <ul className="contact-profiles">
+              {profiles.map((p) => (
+                <li key={p.name}>
+                  <a href={p.url} rel="me noopener" target="_blank">
                     {p.name}
                   </a>
-                </h3>
-                <p className="project-role">{p.role}</p>
-                <p>{p.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+                </li>
+              ))}
+            </ul>
+          </section>
 
-        <section id="background" className="section">
-          <h2>Background</h2>
-          <ol className="timeline">
-            {career.map((c) => (
-              <li key={c.role + c.org}>
-                <div className="timeline-head">
-                  <span className="timeline-role">{c.role}</span>
-                  <span className="timeline-org">{c.org}</span>
-                  {c.period && (
-                    <span className="timeline-period">{c.period}</span>
-                  )}
-                </div>
-                <p className="timeline-note">{c.note}</p>
-              </li>
-            ))}
-          </ol>
-          <h3 className="subhead">Education</h3>
-          <p>Alumnus, Melbourne High School.</p>
-        </section>
-
-        <section id="publications" className="section">
-          <h2>Publications &amp; Media</h2>
-          <ul className="pub-list">
-            {publications.map((p) => (
-              <li key={p.title}>
-                <a href={p.url}>{p.title}</a>
-                <span className="pub-meta">{p.meta}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section id="elsewhere" className="section">
-          <h2>Elsewhere</h2>
-          <p>
-            You can verify my work and find me across the web on these
-            profiles:
-          </p>
-          <ul className="profile-list">
-            {profiles.map((p) => (
-              <li key={p.name}>
-                <a href={p.url} rel="me">
-                  {p.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section id="contact" className="section">
-          <h2>Contact</h2>
-          <p>
-            The fastest way to reach me is email:{" "}
-            <a href="mailto:admin@omthentic.ai">admin@omthentic.ai</a>
-          </p>
-          <p className="corrections">
-            Corrections take priority. If anything on this page is wrong,
-            include the address of the page and the source that contradicts
-            it.
-          </p>
-        </section>
+          <section className="section" id="contact">
+            <div className="contact-band">
+              <div>
+                <p className="eyebrow">Contact</p>
+                <h2>Getting in touch</h2>
+                <p>
+                  Corrections take priority. Include the address of the page
+                  and the source that contradicts it.
+                </p>
+              </div>
+              <a className="cta" href="mailto:admin@omthentic.ai">
+                Contact Shanaka
+              </a>
+            </div>
+          </section>
+        </div>
       </main>
 
-      <footer className="footer">
-        <p>
-          © {new Date().getFullYear()} Shanaka Jayakody · Melbourne, Australia
-        </p>
+      <footer className="site-footer">
+        <div className="wrap-wide">
+          <p>
+            <strong>Shanaka Jayakody</strong>. Founder &amp; CEO,
+            MedWithPurpose. Melbourne, Australia.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shanakajayakody/"
+                rel="me noopener"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.goodreads.com/author/show/18843327.Shanaka_Jayakody"
+                rel="me noopener"
+                target="_blank"
+              >
+                Goodreads
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.skool.com/@shanaka-jayakody"
+                rel="me noopener"
+                target="_blank"
+              >
+                Skool
+              </a>
+            </li>
+          </ul>
+          <p className="meta">
+            © {new Date().getFullYear()} Shanaka Jayakody.
+          </p>
+        </div>
       </footer>
     </>
   );
