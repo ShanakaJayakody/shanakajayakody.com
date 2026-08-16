@@ -115,12 +115,58 @@ const writing = [
   },
 ];
 
-const press = [
+const podcasts = [
+  {
+    title: "Education Reform",
+    meta: "One Percent Better Podcast · 2018",
+    url: "https://www.youtube.com/watch?v=0Jh3DHElLzc",
+  },
+  {
+    title: "Living With Purpose",
+    meta: "The Chillcast, Episode 1 · 2021",
+    url: "https://www.youtube.com/watch?v=GxNHsG8FIm8",
+  },
+  {
+    title: "Find Your Why",
+    meta: "The Chillcast, Episode 2 · 2021",
+    url: "https://www.youtube.com/watch?v=oH5XYPzXz4k",
+  },
+  {
+    title: "Overcoming Fear",
+    meta: "The Chillcast, Episode 4 · 2021",
+    url: "https://www.youtube.com/watch?v=VHSRRJzpCbc",
+  },
+  {
+    title: "Addictions and Accountability",
+    meta: "The Chillcast, Episode 6 · 2021",
+    url: "https://www.youtube.com/watch?v=0U7Z__KGhqQ",
+  },
+  {
+    title: "Controlling Your Emotions",
+    meta: "The Chillcast, Episode 7 · 2021",
+    url: "https://www.youtube.com/watch?v=tJdhn1LPVLw",
+  },
   {
     title: "Finding Purpose at your Lowest Point",
     meta: "Bottled Up Podcast · 2022",
     url: "https://podcasts.apple.com/nz/podcast/53-finding-purpose-at-your-lowest-point-death-and/id1524876519?i=1000575427726",
   },
+];
+
+const panels = [
+  {
+    title: "Work Without Walls, A Panel Discussion",
+    meta: "Panel · 2020",
+    url: "https://www.youtube.com/watch?v=GBpExhK0rXA",
+  },
+  {
+    title: "Med School Exposed, The KIS Conference",
+    meta: "KIS Academics · 2021",
+    url: "https://www.youtube.com/watch?v=PqjesXluQHA",
+  },
+];
+
+const press = [
   {
     title: "UCAT Masterclass with KIS Academics",
     meta: "KIS Academics · 2021",
@@ -205,7 +251,7 @@ export default function App() {
                   High School.
                 </p>
                 <p className="hero-proof rise d5">
-                  <b>2</b> published books and <b>2</b> recorded appearances.
+                  <b>2</b> published books and <b>10</b> recorded appearances.
                 </p>
               </div>
             </section>
@@ -307,8 +353,35 @@ export default function App() {
           <section className="section" id="quoted">
             <div className="shead">
               <h2>Quoted elsewhere</h2>
-              <p className="eyebrow">Press</p>
+              <p className="eyebrow">Appearances and press</p>
             </div>
+            <h3>Podcasts</h3>
+            <ul className="pub-list">
+              {podcasts.map((p) => (
+                <li key={p.title}>
+                  <h3>
+                    <a href={p.url} rel="noopener" target="_blank">
+                      {p.title}
+                    </a>
+                  </h3>
+                  <p className="meta">{p.meta}</p>
+                </li>
+              ))}
+            </ul>
+            <h3>Panels</h3>
+            <ul className="pub-list">
+              {panels.map((p) => (
+                <li key={p.title}>
+                  <h3>
+                    <a href={p.url} rel="noopener" target="_blank">
+                      {p.title}
+                    </a>
+                  </h3>
+                  <p className="meta">{p.meta}</p>
+                </li>
+              ))}
+            </ul>
+            <h3>Press</h3>
             <ul className="pub-list">
               {press.map((p) => (
                 <li key={p.title}>
