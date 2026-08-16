@@ -8,7 +8,7 @@ const stats = [
 const ventures = [
   {
     name: "MedWithPurpose",
-    role: "Founder & Head UCAT Tutor",
+    role: "Founder & CEO",
     url: "https://medwithpurpose.com",
     description:
       "Australian medical admissions preparation: UCAT Mastery with 25,000+ practice questions, Interview Mastery for MMI and panel formats, and CASPer preparation with AI marking. Over 1,000 students coached into medicine and health-science programs.",
@@ -18,7 +18,21 @@ const ventures = [
     role: "Founder",
     url: "https://omthentic.ai",
     description:
-      "A venture house building technology for authentic human expression. Its live product, InterviewMD, helps medical school applicants succeed in high-stakes interviews by becoming genuinely themselves rather than reciting scripts.",
+      "A venture house building technology for authentic human expression, aimed at helping people communicate as themselves rather than to a script.",
+  },
+  {
+    name: "InterviewMD",
+    role: "Co-Founder · Since 2025",
+    url: "https://omthentic.ai",
+    description:
+      "Medical school interview preparation combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
+  },
+  {
+    name: "The PrepBond Academy",
+    role: "Founder · Since 2025",
+    url: "https://prep-bond.vercel.app",
+    description:
+      "Preparation for the MSCEIT, the psychometric assessment used in Bond University medical admissions. Independent of Bond University and not endorsed by it.",
   },
   {
     name: "UCAT Secrets",
@@ -60,6 +74,45 @@ const publications = [
   },
 ];
 
+const career = [
+  {
+    role: "Founder & CEO",
+    org: "MedWithPurpose",
+    period: "",
+    note: "Founded to make medical admissions preparation accessible to Australian applicants.",
+  },
+  {
+    role: "Founder",
+    org: "Omthentic",
+    period: "",
+    note: "A venture house for technology supporting authentic human expression.",
+  },
+  {
+    role: "Co-Founder",
+    org: "InterviewMD",
+    period: "2025 to present",
+    note: "Interview preparation pairing coaching with adaptive software.",
+  },
+  {
+    role: "Founder",
+    org: "The PrepBond Academy",
+    period: "2025 to present",
+    note: "MSCEIT preparation for Bond University medical admissions.",
+  },
+  {
+    role: "Author & Founder",
+    org: "UCAT Secrets",
+    period: "",
+    note: "The imprint under which both UCAT preparation books were published.",
+  },
+  {
+    role: "Character & Culture Lead for Schools",
+    org: "ShareTree",
+    period: "",
+    note: "Values development in schools with a Melbourne charity.",
+  },
+];
+
 const profiles = [
   { name: "LinkedIn", url: "https://www.linkedin.com/in/shanakajayakody/" },
   { name: "GitHub", url: "https://github.com/ShanakaJayakody" },
@@ -92,10 +145,12 @@ export default function App() {
         <section className="hero">
           <p className="kicker">Educator · Founder · Builder · Melbourne, Australia</p>
           <h1>Shanaka Jayakody</h1>
+          <p className="hero-role">Founder &amp; CEO, MedWithPurpose</p>
           <p className="lede">
             I build values-driven education businesses, refined by technology
             and measured by the students they help activate. Founder of
-            MedWithPurpose and Omthentic, author of two UCAT preparation books.
+            MedWithPurpose, Omthentic and The PrepBond Academy, co-founder of
+            InterviewMD, and author of two UCAT preparation books.
           </p>
         </section>
 
@@ -150,6 +205,26 @@ export default function App() {
           </div>
         </section>
 
+        <section id="background" className="section">
+          <h2>Background</h2>
+          <ol className="timeline">
+            {career.map((c) => (
+              <li key={c.role + c.org}>
+                <div className="timeline-head">
+                  <span className="timeline-role">{c.role}</span>
+                  <span className="timeline-org">{c.org}</span>
+                  {c.period && (
+                    <span className="timeline-period">{c.period}</span>
+                  )}
+                </div>
+                <p className="timeline-note">{c.note}</p>
+              </li>
+            ))}
+          </ol>
+          <h3 className="subhead">Education</h3>
+          <p>Alumnus, Melbourne High School.</p>
+        </section>
+
         <section id="publications" className="section">
           <h2>Publications &amp; Media</h2>
           <ul className="pub-list">
@@ -184,6 +259,11 @@ export default function App() {
           <p>
             The fastest way to reach me is email:{" "}
             <a href="mailto:admin@omthentic.ai">admin@omthentic.ai</a>
+          </p>
+          <p className="corrections">
+            Corrections take priority. If anything on this page is wrong,
+            include the address of the page and the source that contradicts
+            it.
           </p>
         </section>
       </main>

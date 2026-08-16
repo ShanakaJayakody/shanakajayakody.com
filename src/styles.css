@@ -96,6 +96,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.hero-role {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
 .lede {
   font-size: 1.25rem;
   color: var(--muted);
@@ -180,6 +185,56 @@ h2 {
 
 .project h3 a:hover {
   color: var(--accent);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.timeline li {
+  border-left: 2px solid var(--border);
+  padding-left: 1.1rem;
+}
+
+.timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.timeline-role {
+  font-weight: 600;
+}
+
+.timeline-org {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline-period {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.timeline-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.subhead {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.corrections {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .pub-list {
