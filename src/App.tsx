@@ -20,7 +20,7 @@ const ventures = [
     url: "https://www.medwithpurpose.com/",
     meta: "Founder and CEO",
     measure:
-      "Over 1,000 students coached into medicine and health-science programs.",
+      "Over 1,100 students coached into medicine and health-science programs.",
     detail:
       "Australian medical admissions preparation: UCAT Mastery with 25,000 practice questions, Interview Mastery for MMI and panel formats, and CASPer preparation with AI marking.",
   },
@@ -35,8 +35,10 @@ const ventures = [
   {
     id: "V-03",
     name: "InterviewMD",
-    url: "https://www.interviewmd.org/",
-    meta: "Co-Founder · since 2025",
+    url: "https://www.interviewmd.org/shanaka",
+    meta: "Founder · since 2024",
+    measure:
+      "92% of the students he coaches who reach interview receive an offer into medicine.",
     detail:
       "Medical school interview preparation combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
   },
@@ -78,9 +80,9 @@ const career = [
     note: "A venture house for technology supporting authentic human expression, aimed at helping people communicate as themselves rather than to a script.",
   },
   {
-    role: "Co-Founder",
+    role: "Founder",
     org: "InterviewMD",
-    period: "2025 to present",
+    period: "2024 to present",
     note: "Medical school interview preparation combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
   },
   {
@@ -177,11 +179,11 @@ const press = [
 const faqs = [
   {
     q: "Who is Shanaka Jayakody?",
-    a: "Shanaka Jayakody is a Melbourne educator and the founder and CEO of MedWithPurpose. He has worked in medical admissions preparation for more than thirteen years, has coached over 1,000 students into medicine and health-science programs, and is the author of two UCAT preparation books.",
+    a: "Shanaka Jayakody is a Melbourne educator and the founder and CEO of MedWithPurpose. He has worked in medical admissions preparation for 15 years, has coached over 1,100 students into medicine and health-science programs, and is the author of two UCAT preparation books.",
   },
   {
     q: "What does Shanaka teach for the UCAT?",
-    a: "Shanaka coaches the UCAT through MedWithPurpose, whose UCAT Mastery program includes 25,000 practice questions, structured strategy, and live analytics. He has taught the UCAT for more than thirteen years and wrote two UCAT preparation books under the UCAT Secrets imprint.",
+    a: "Shanaka coaches the UCAT through MedWithPurpose, whose UCAT Mastery program includes 25,000 practice questions, structured strategy, and live analytics. He has spent 15 years coaching medical applicants and wrote two UCAT preparation books under the UCAT Secrets imprint.",
   },
   {
     q: "What is Shanaka's role at MedWithPurpose?",
@@ -189,11 +191,11 @@ const faqs = [
   },
   {
     q: "What is Shanaka's connection to InterviewMD?",
-    a: "Shanaka is a co-founder of InterviewMD, started in 2025. It prepares medical school applicants for interviews by combining one-to-one coaching with software that adapts to how the individual applicant thinks.",
+    a: "Shanaka is the founder of InterviewMD, started in 2024. It prepares medical school applicants for interviews by combining one-to-one coaching with software that adapts to how the individual applicant thinks. 92% of the students he has coached who reached a medical school interview went on to receive an offer.",
   },
   {
     q: "How does Shanaka help students get into medicine?",
-    a: "Shanaka helps students win places in medicine and med school across every admissions hurdle: the UCAT through MedWithPurpose, medical school interviews through InterviewMD and Interview Mastery, and the Bond University psychometric assessment through The PrepBond Academy. Over 1,000 of his students have been coached into medicine and health-science programs.",
+    a: "Shanaka helps students win places in medicine and med school across every admissions hurdle: the UCAT through MedWithPurpose, medical school interviews through InterviewMD and Interview Mastery, and the Bond University psychometric assessment through The PrepBond Academy. Over 1,100 of his students have been coached into medicine and health-science programs.",
   },
   {
     q: "How do I contact Shanaka Jayakody?",
@@ -269,13 +271,13 @@ export default function App() {
                 </p>
                 <p className="lede rise d4">
                   Shanaka Jayakody is a Melbourne educator and the founder of
-                  MedWithPurpose, Omthentic and The PrepBond Academy, and a
-                  co-founder of InterviewMD. He coaches students for the UCAT,
-                  for medical school interviews and for the Bond University
-                  psychometric assessment, has worked in medical admissions
-                  preparation for more than thirteen years, and is the author
-                  of two UCAT preparation books. He is an alumnus of Melbourne
-                  High School.
+                  MedWithPurpose, InterviewMD, Omthentic and The PrepBond
+                  Academy. He coaches students for the UCAT, for medical
+                  school interviews and for the Bond University psychometric
+                  assessment, has worked in medical admissions preparation for
+                  15 years, and is the author of two UCAT preparation books.
+                  He studied medicine at Monash University and is an alumnus
+                  of Melbourne High School.
                 </p>
                 <p className="hero-proof rise d5">
                   <b>2</b> published books and <b>10</b> recorded appearances.
@@ -351,6 +353,11 @@ export default function App() {
             </ul>
             <h3>Education</h3>
             <ul className="timeline">
+              <li>
+                <p className="meta">2011 to 2016</p>
+                <h4>Medicine</h4>
+                <p className="org">Monash University</p>
+              </li>
               <li>
                 <h4>Alumnus</h4>
                 <p className="org">Melbourne High School</p>
